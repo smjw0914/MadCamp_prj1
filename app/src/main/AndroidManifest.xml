@@ -28,6 +28,7 @@
         <service
             android:name="RingtonePlayingService"></service>
         <activity android:name=".fullscreen"></activity>
+        <activity android:name=".popImg"></activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyB-5qDRlAh2cTQKuQGuI-yQRbjFQG7_a5w"/>
