@@ -102,12 +102,10 @@ public class myGPS {
 
                 if(myLocation.distanceTo(targetLocation) <= 20) {
                     arrive=true;
-                    Toast.makeText(mActivity.getApplicationContext(), "목적지 도착", Toast.LENGTH_SHORT).show();
                 }else {
                     Float dis = myLocation.distanceTo(targetLocation);
-                    Toast.makeText(mActivity.getApplicationContext(), Float.toString(dis),Toast.LENGTH_LONG).show();
                 }
-            } else  Toast.makeText(mActivity.getApplicationContext(), "setTarget==false", Toast.LENGTH_SHORT).show();
+            }
 
         }
 

@@ -143,7 +143,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                     else flag += 1;
                 } else {
-                    Log.i("dead","500");
                     android.os.Process.killProcess(android.os.Process.myPid());
                 }
             }

@@ -112,6 +112,9 @@ public class frag3 extends Fragment implements OnMapReadyCallback {
                 Toast.makeText(context, "Alarm 예정 " + hour + "시 " + minute + "분", Toast.LENGTH_SHORT).show();
                 // reveiver에 string 값 넘겨주기
                 my_intent.putExtra("state", "alarm on");
+                my_intent.putExtra("Latitude",galleryManager.ImgLatitude);
+                my_intent.putExtra("Longitude",galleryManager.ImgLongitude);
+                //my_intent.putExtra("GoogleMap",mMap);
                 pendingIntent = PendingIntent.getBroadcast(context, 0, my_intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
                 // 알람셋팅

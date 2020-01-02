@@ -14,11 +14,17 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
+import com.google.android.gms.maps.GoogleMap;
+
+import java.io.Serializable;
+
 public class RingtonePlayingService extends Service {
 
     MediaPlayer mediaPlayer;
     int startId;
     boolean isRunning;
+
+    GoogleMap googlMap;
 
     @Nullable
     @Override
@@ -48,6 +54,7 @@ public class RingtonePlayingService extends Service {
             startForeground(1, notification);
         }
     }
+
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
@@ -115,6 +122,10 @@ public class RingtonePlayingService extends Service {
         super.onDestroy();
 
         Log.d("onDestory() 실행", "서비스 파괴");
+
+    }
+
+    public void setMarker(){
 
     }
 }
